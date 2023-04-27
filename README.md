@@ -23,3 +23,4 @@ Publish the package
 DONT DO IN PRODUCTION:
 but for ease of development
 ### `npm pub`
+- this command just run the git add, commit, version patch, build and publish all in one command.
