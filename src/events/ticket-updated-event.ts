@@ -2,7 +2,7 @@ import { Subjects } from "./subjects";
 
 // each event will have its own event that handles type validation
 export interface TicketUpdatedEvent {
-  subject: Subjects.TickedUpdated;
+  subject: Subjects.TicketUpdated;
   data: {
     id: string;
     title: string;
