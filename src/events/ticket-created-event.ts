@@ -5,6 +5,7 @@ export interface TicketCreatedEvent {
   subject: Subjects.TicketCreated;
   data: {
     id: string;
+    verion: number;
     title: string;
     price: number;
     userId: string;
