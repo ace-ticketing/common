@@ -11,7 +11,7 @@ export abstract class Listener<T extends Event> {
   abstract subject: T["subject"];
   abstract queueGroupName: string;
   abstract onMessage(data: T["data"], msg: Message): void;
-  private client: Stan;
+  protected client: Stan; // changed to protect so subclasses can access it
   protected ackWait = 5 * 1000; // 5 seconds default can be overwriten
 
   constructor(client: Stan) {
